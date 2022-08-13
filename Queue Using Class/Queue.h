@@ -1,6 +1,6 @@
 #pragma once
 
-const int STACK_SIZE{ 10 };
+const int QUEUE_SIZE{ 10 };
 
 enum Command
 {
@@ -11,9 +11,8 @@ enum Command
 
 class Queue
 {
-	int mQueue[STACK_SIZE]{};
-	int mHeadIndex{ -1 };
-	int mTailIndex{ -1 };
+	int mQueue[QUEUE_SIZE]{};
+	int mTopIndex{ -1 };
 
 public:
 	void PrintInfo();
